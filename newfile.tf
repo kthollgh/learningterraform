@@ -1,4 +1,4 @@
-variable "subnet_ids" {id1
+variable "subnet_ids" {id1}
   type = list(string)
 }
 
