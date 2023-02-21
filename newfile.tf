@@ -1,3 +1,7 @@
+variable "subnet_ids" {
+  type = list(string)
+}
+
 resource "aws_instance" "server" {
   # Create one instance for each subnet
   count = length(var.subnet_ids)
